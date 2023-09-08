@@ -36,7 +36,7 @@ class Server:
         """Returns the appropriate page of the dataset."""
         assert isinstance(page, int) and isinstance(page_size, int)
         assert page > 0 and page_size > 0
-        
+
         if self.__dataset is None:
             self.dataset()
 
