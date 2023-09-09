@@ -68,12 +68,12 @@ class Server:
 
         data = self.get_page(page, page_size)
 
-        dict = {
-                "page_size": len(page_size),
-                "page": page
-                "data": data
-                "next_page": next_page
-                "prev_page": prev_page
+        result_dict = {
+                "page_size": page_size,
+                "page": page,
+                "data": data,
+                "next_page": next_page,
+                "prev_page": prev_page,
                 "total_pages": total_pages
                 }
-        return dict
+        return result_dict
