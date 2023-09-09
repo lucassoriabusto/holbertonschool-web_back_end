@@ -66,12 +66,10 @@ class Server:
         else:
             prev_page = page - 1
 
-        data = self.get_page(page, page_size)
-
         result_dict = {
                 "page_size": page_size,
                 "page": page,
-                "data": data,
+                "data": self.get_page(page, page_size),
                 "next_page": next_page,
                 "prev_page": prev_page,
                 "total_pages": total_pages
