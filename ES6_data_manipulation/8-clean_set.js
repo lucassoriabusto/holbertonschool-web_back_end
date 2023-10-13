@@ -4,7 +4,7 @@ export default function cleanSet(set, startString) {
     if (value.startsWith(startString)) {
       const restOfValue = value.slice(startString.length);
       if (result) {
-        result += '-' + restOfValue;
+        result += `-${restOfValue}`;
       } else {
         result += restOfValue;
       }
