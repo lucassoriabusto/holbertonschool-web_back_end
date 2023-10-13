@@ -1,5 +1,6 @@
 export default function cleanSet(set, startString) {
   let result = '';
+  
   if (typeof startString === 'string' && startString) {
     for (const value of set) {
       if (value.startsWith(startString)) {
@@ -11,7 +12,7 @@ export default function cleanSet(set, startString) {
         }
       }
     }
-    return result;
   }
+  
   return result;
 }
